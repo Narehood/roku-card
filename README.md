@@ -4,7 +4,7 @@
 [![License][license-shield]](LICENSE.md)
 [![hacs_badge](https://img.shields.io/badge/HACS-Default-orange.svg?style=for-the-badge)](https://github.com/hacs/integration)
 
-[![Project Maintenance][maintenance-shield]
+![Project Maintenance][maintenance-shield]
 [![GitHub Activity][commits-shield]][commits]
 
 
@@ -170,7 +170,7 @@ power:
 [forum-shield]: https://img.shields.io/badge/community-forum-brightgreen.svg?style=for-the-badge
 [forum]: https://community.home-assistant.io/t/lovelace-roku-remote-card/91476
 [license-shield]: https://img.shields.io/github/license/Narehood/roku-card.svg?style=for-the-badge
-[maintenance-shield]: https://img.shields.io/badge/maintainer-Michael%20Narehood%20%40Narehood-blue.svg?style=for-the-badge
+[maintenance-shield]: https://img.shields.io/badge/maintainer-%40Narehood-blue.svg?style=for-the-badge
 [releases-shield]: https://img.shields.io/github/release/Narehood/roku-card.svg?style=for-the-badge
 [releases]: https://github.com/Narehood/roku-card/releases
 [twitter]: https://img.shields.io/twitter/follow/michaelnarehood.svg?style=social
