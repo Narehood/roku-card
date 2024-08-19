@@ -7,19 +7,12 @@
 ![Project Maintenance][maintenance-shield]
 [![GitHub Activity][commits-shield]][commits]
 
-[![Discord][discord-shield]][discord]
-[![Community Forum][forum-shield]][forum]
 
 [![Twitter][twitter]][twitter]
 [![Github][github]][github]
 
-## Support
+Note: This repository has been modified for personal use. If you wish to use the original you may do so here: https://github.com/iantrich/roku-card
 
-Hey dude! Help me out for a couple of :beers: or a :coffee:!
-
-[![coffee](https://www.buymeacoffee.com/assets/img/custom_images/black_img.png)](https://www.buymeacoffee.com/zJtVxUAgH)
-
-This card is for [Lovelace](https://www.home-assistant.io/lovelace) on [Home Assistant](https://www.home-assistant.io/) that display a [Roku](https://www.roku.com/) remote.
 
 ![example](example.png)
 
@@ -99,71 +92,90 @@ resources:
 ## Usage
 
 ```yaml
-type: 'custom:roku-card'
-entity: media_player.basement_roku
+type: custom:roku-card
+entity: media_player.michaels_roku
 tv: true
 apps:
-  - image: /local/netflix.webp
-    app: Netflix
-  - image: /local/hulu.webp
-    app: Hulu
-    hold_action:
+  - image: /local/icons/Icon-YouTube.png
+    app: YouTube
+    tap_action:
       action: call-service
+      haptic: success
       service: media_player.select_source
       service_data:
-        source: ESPN
-        entity_id: media_player.basement_roku
+        source: YouTube
+        entity_id: media_player.michaels_roku
+  - image: /local/icons/Icon-Twitch.png
+    app: Stitch
+    tap_action:
+      action: call-service
+      haptic: success
+      service: media_player.select_source
+      service_data:
+        source: Stitch
+        entity_id: media_player.michaels_roku
+  - image: /local/icons/Icon-Floatplane.png
+    app: Hydravion
+    tap_action:
+      action: call-service
+      haptic: success
+      service: media_player.select_source
+      service_data:
+        source: Hydravion
+        entity_id: media_player.michaels_roku
+  - image: /local/icons/Icon-AppleMusic.png
+    app: Apple Music
+    tap_action:
+      action: call-service
+      haptic: success
+      service: media_player.select_source
+      service_data:
+        source: Apple Music
+        entity_id: media_player.michaels_roku
 volume_up:
   tap_action:
     action: call-service
+    haptic: success
     service: remote.send_command
     service_data:
-      entity_id: remote.basement_roku
-      command: play
+      entity_id: remote.michaels_roku
+      command: volume_up
 volume_down:
-  double_tap_action:
+  tap_action:
     action: call-service
+    haptic: success
     service: remote.send_command
     service_data:
-      entity_id: remote.basement_roku
-      command: play
+      entity_id: remote.michaels_roku
+      command: volume_down
+volume_mute:
+  tap_action:
+    action: call-service
+    haptic: success
+    service: remote.send_command
+    service_data:
+      entity_id: remote.michaels_roku
+      command: volume_mute
+forward:
+  show: false
+reverse:
+  show: false
+play:
+  show: false
+power:
+  show: false
+
 ```
 
 [Troubleshooting](https://github.com/thomasloven/hass-config/wiki/Lovelace-Plugins)
 
-## Developers
 
-1. Fork and clone the repository.
-2. Open the [devcontainer][devcontainer] and run `npm start` when it's ready.
-3. The compiled `.js` file will be accessible on
-   `http://127.0.0.1:5000/roku-card.js`.
-4. On a running Home Assistant installation add this to your Lovelace
-   `resources:`
-
-```yaml
-- url: 'http://127.0.0.1:5000/roku-card.js'
-  type: module
-```
-
-_Change "127.0.0.1" to the IP of your development machine._
-
-### Bonus
-
-If you need a fresh test instance you can install a fresh Home Assistant instance inside the devcontainer as well.
-
-1. Run the command `dc start`.
-2. Home Assistant will install and will eventually be running on port `9123`
-
-[commits-shield]: https://img.shields.io/github/commit-activity/y/iantrich/roku-card.svg?style=for-the-badge
-[commits]: https://github.com/iantrich/roku-card/commits/master
-[devcontainer]: https://code.visualstudio.com/docs/remote/containers
-[discord]: https://discord.gg/Qa5fW2R
-[discord-shield]: https://img.shields.io/discord/330944238910963714.svg?style=for-the-badge
+[commits-shield]: https://img.shields.io/github/commit-activity/y/Narehood/roku-card.svg?style=for-the-badge
+[commits]: https://github.com/Narehood/roku-card/commits/master
 [forum-shield]: https://img.shields.io/badge/community-forum-brightgreen.svg?style=for-the-badge
 [forum]: https://community.home-assistant.io/t/lovelace-roku-remote-card/91476
-[license-shield]: https://img.shields.io/github/license/iantrich/roku-card.svg?style=for-the-badge
-[maintenance-shield]: https://img.shields.io/badge/maintainer-Ian%20Richardson%20%40iantrich-blue.svg?style=for-the-badge
-[releases-shield]: https://img.shields.io/github/release/iantrich/roku-card.svg?style=for-the-badge
-[releases]: https://github.com/iantrich/roku-card/releases
-[twitter]: https://img.shields.io/twitter/follow/iantrich.svg?style=social
-[github]: https://img.shields.io/github/followers/iantrich.svg?style=social
+[license-shield]: https://img.shields.io/github/license/Narehood/roku-card.svg?style=for-the-badge
+[releases-shield]: https://img.shields.io/github/release/Narehood/roku-card.svg?style=for-the-badge
+[releases]: https://github.com/Narehood/roku-card/releases
+[twitter]: https://img.shields.io/twitter/follow/michaelnarehood.svg?style=social
+[github]: https://img.shields.io/github/followers/Narehood.svg?style=social
