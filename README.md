@@ -1,8 +1,6 @@
 # 📺 Roku Remote Card
 
-[![GitHub Release][releases-shield]][releases]
 [![License][license-shield]](LICENSE.md)
-[![hacs_badge](https://img.shields.io/badge/HACS-Default-orange.svg?style=for-the-badge)](https://github.com/hacs/integration)
 
 ![Project Maintenance][maintenance-shield]
 [![GitHub Activity][commits-shield]][commits]
@@ -15,12 +13,6 @@ Note: This repository has been modified for personal use. If you wish to use the
 
 
 ![example](example.png)
-
-## Installation
-
-Version 1.1.0 and above require Home Assistant 0.110.0 or above
-
-Use [HACS](https://hacs.xyz) or follow this [guide](https://github.com/thomasloven/hass-config/wiki/Lovelace-Plugins)
 
 
 ## Options
@@ -171,7 +163,5 @@ power:
 [forum]: https://community.home-assistant.io/t/lovelace-roku-remote-card/91476
 [license-shield]: https://img.shields.io/github/license/Narehood/roku-card.svg?style=for-the-badge
 [maintenance-shield]: https://img.shields.io/badge/maintainer-%40Narehood-blue.svg?style=for-the-badge
-[releases-shield]: https://img.shields.io/github/release/Narehood/roku-card.svg?style=for-the-badge
-[releases]: https://github.com/Narehood/roku-card/releases
 [twitter]: https://img.shields.io/twitter/follow/michaelnarehood.svg?style=social
 [github]: https://img.shields.io/github/followers/Narehood.svg?style=social
