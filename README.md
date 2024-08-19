@@ -1,12 +1,9 @@
 # 📺 Roku Remote Card
 
+[![GitHub Release][releases-shield]][releases]
 [![License][license-shield]](LICENSE.md)
 
-![Project Maintenance][maintenance-shield]
 [![GitHub Activity][commits-shield]][commits]
-
-
-[![Twitter][twitter]][twitter]
 [![Github][github]][github]
 
 Note: This repository has been modified for personal use. If you wish to use the original you may do so here: https://github.com/iantrich/roku-card
