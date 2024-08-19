@@ -1,7 +1,6 @@
 # 📺 Roku Remote Card
 
 [![License][license-shield]](LICENSE.md)
-
 [![GitHub Activity][commits-shield]][commits]
 [![Github][github]][github]
 [![Twitter][twitter]][twitter]
