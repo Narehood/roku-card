@@ -4,7 +4,7 @@
 [![License][license-shield]](LICENSE.md)
 [![hacs_badge](https://img.shields.io/badge/HACS-Default-orange.svg?style=for-the-badge)](https://github.com/hacs/integration)
 
-![Project Maintenance][maintenance-shield]
+[![Project Maintenance][maintenance-shield]
 [![GitHub Activity][commits-shield]][commits]
 
 
@@ -18,15 +18,10 @@ Note: This repository has been modified for personal use. If you wish to use the
 
 ## Installation
 
-# Version 1.1.0 and above require Home Assistant 0.110.0 or above
+Version 1.1.0 and above require Home Assistant 0.110.0 or above
 
 Use [HACS](https://hacs.xyz) or follow this [guide](https://github.com/thomasloven/hass-config/wiki/Lovelace-Plugins)
 
-```yaml
-resources:
-  url: /local/roku-card.js
-  type: module
-```
 
 ## Options
 
